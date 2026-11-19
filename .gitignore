@@ -1,0 +1,4 @@
+platform-tools/
+platform-tools.zip
+*.log
+__pycache__/

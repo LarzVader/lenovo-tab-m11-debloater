@@ -1,0 +1,662 @@
+{
+  "schema": 1,
+  "tested_on": {
+    "model": "TB330FU",
+    "firmware": "TB330FU_ROW_OPEN_USER_V5_V_ZUI_17.0.502_ST_261010",
+    "android": "15",
+    "date": "2026-11"
+  },
+  "categories": [
+    {
+      "id": "lenovo-ads",
+      "name": {
+        "en": "Lenovo advertising, tracking and shop demos",
+        "de": "Lenovo-Werbung, Datensammler und Laden-Vorführung"
+      },
+      "note": {
+        "en": "Recommended to remove. None of these has a function you would miss.",
+        "de": "Empfohlen zum Entfernen. Keine davon hat eine Funktion, die du vermissen würdest."
+      },
+      "items": [
+        {
+          "id": "tabtop-picks",
+          "name": {"en": "Tabtop Picks", "de": "Tabtop Picks"},
+          "packages": ["com.lenovo.rt"],
+          "recommended": true,
+          "tested": true,
+          "what": {
+            "en": "Advertising module from the ad network Appnext. Suggests apps and shows promotional notifications.",
+            "de": "Werbemodul des Werbenetzwerks Appnext. Schlägt Apps vor und zeigt Werbe-Benachrichtigungen."
+          },
+          "effect": {
+            "en": "No more app suggestions or ad notifications from it. Nothing else changes.",
+            "de": "Keine App-Vorschläge und Werbe-Benachrichtigungen mehr. Sonst ändert sich nichts."
+          }
+        },
+        {
+          "id": "aura-appservices",
+          "name": {"en": "AppServices (Aura)", "de": "AppServices (Aura)"},
+          "packages": ["com.aura.oobe.lenovo"],
+          "recommended": true,
+          "tested": true,
+          "what": {
+            "en": "Aura app recommendation service. Offers partner apps during setup.",
+            "de": "App-Empfehlungsdienst Aura. Bietet bei der Einrichtung Partner-Apps an."
+          },
+          "effect": {
+            "en": "No more offers of partner apps. Nothing else changes.",
+            "de": "Keine Angebote für Partner-Apps mehr. Sonst ändert sich nichts."
+          }
+        },
+        {
+          "id": "play-auto-installs",
+          "name": {"en": "Play Auto Installs (PAI)", "de": "Play Auto Installs (PAI)"},
+          "packages": ["android.autoinstalls.config.Lenovo.tablet"],
+          "recommended": true,
+          "tested": true,
+          "what": {
+            "en": "List of partner apps that Google Play installs automatically after setup.",
+            "de": "Liste von Partner-Apps, die Google Play nach der Einrichtung automatisch installiert."
+          },
+          "effect": {
+            "en": "Only used right after setup. Removing it has no visible effect.",
+            "de": "Wird nur direkt nach der Einrichtung gebraucht. Entfernen hat keine sichtbare Wirkung."
+          }
+        },
+        {
+          "id": "opera-preinstall",
+          "name": {"en": "Opera Preinstall Data", "de": "Opera Preinstall Data"},
+          "packages": ["com.opera.preinstall"],
+          "recommended": true,
+          "tested": true,
+          "what": {
+            "en": "Small data package with partner data for the Opera browser. Opera itself is not installed.",
+            "de": "Kleines Datenpaket mit Partnerdaten für den Opera-Browser. Opera selbst ist nicht installiert."
+          },
+          "effect": {
+            "en": "None.",
+            "de": "Keine."
+          }
+        },
+        {
+          "id": "user-experience",
+          "name": {"en": "User Experience", "de": "User Experience"},
+          "packages": ["com.lenovo.ue.device"],
+          "recommended": true,
+          "tested": true,
+          "what": {
+            "en": "Lenovo's usage statistics. Collects data about the tablet and how it is used, and uploads it.",
+            "de": "Lenovos Nutzungsstatistik. Sammelt Daten über das Tablet und seine Nutzung und lädt sie hoch."
+          },
+          "effect": {
+            "en": "Lenovo no longer receives these statistics. Nothing else changes.",
+            "de": "Lenovo bekommt diese Statistik nicht mehr. Sonst ändert sich nichts."
+          }
+        },
+        {
+          "id": "lenovo-push",
+          "name": {"en": "Device Service Support (Lenovo push)", "de": "Kundendienst für Einheit (Lenovo-Push)"},
+          "packages": ["com.tblenovo.tabpushout"],
+          "recommended": true,
+          "tested": true,
+          "what": {
+            "en": "Receives push messages from Lenovo's servers.",
+            "de": "Empfängt Push-Nachrichten von Lenovos Servern."
+          },
+          "effect": {
+            "en": "No more push messages from Lenovo.",
+            "de": "Keine Push-Nachrichten mehr von Lenovo."
+          }
+        },
+        {
+          "id": "tips",
+          "name": {"en": "Tips", "de": "Tipps"},
+          "packages": ["com.tblenovo.lenovowhatsnew"],
+          "recommended": true,
+          "tested": true,
+          "what": {
+            "en": "Lenovo's tips and \"what's new\" notes.",
+            "de": "Lenovos Tipps und „Was ist neu“-Hinweise."
+          },
+          "effect": {
+            "en": "No more tips. Nothing else changes.",
+            "de": "Keine Tipps mehr. Sonst ändert sich nichts."
+          }
+        },
+        {
+          "id": "uds-engine",
+          "name": {"en": "UDS real time engine", "de": "UDS-Echtzeit-Engine"},
+          "packages": ["com.lenovo.tbengine"],
+          "recommended": false,
+          "tested": true,
+          "what": {
+            "en": "Lenovo background service for tips and push messages that also downloads and installs Lenovo apps in the background. Always running.",
+            "de": "Lenovo-Hintergrunddienst für Tipps und Push-Nachrichten, der auch Lenovo-Apps im Hintergrund herunterlädt und installiert. Läuft ständig."
+          },
+          "effect": {
+            "en": "No more tips or background installs, and a little more free memory. The tablet ran normally without it. It is not preselected only because no system update has been installed without it yet.",
+            "de": "Keine Tipps und Hintergrund-Installationen mehr und etwas mehr freier Arbeitsspeicher. Das Tablet lief ohne ihn normal. Nur deshalb nicht vorausgewählt, weil ohne ihn noch kein Systemupdate eingespielt wurde."
+          }
+        },
+        {
+          "id": "shop-presentation",
+          "name": {"en": "Lenovo Tab M11 (shop presentation)", "de": "Lenovo Tab M11 (Laden-Präsentation)"},
+          "packages": ["com.lenovo.tab_m11"],
+          "recommended": true,
+          "tested": true,
+          "what": {
+            "en": "Product presentation with videos for display devices in shops.",
+            "de": "Produktvorstellung mit Videos für Vorführgeräte im Laden."
+          },
+          "effect": {
+            "en": "None for you.",
+            "de": "Für dich keine."
+          }
+        },
+        {
+          "id": "demo-mode",
+          "name": {"en": "Demo mode", "de": "Demomodus"},
+          "packages": ["com.motorola.demo"],
+          "recommended": true,
+          "tested": true,
+          "what": {
+            "en": "Demo mode for display devices in shops.",
+            "de": "Vorführmodus für Geräte im Laden."
+          },
+          "effect": {
+            "en": "None for you.",
+            "de": "Für dich keine."
+          }
+        },
+        {
+          "id": "ocz-deployment",
+          "name": {"en": "OCZ deployment tools", "de": "OCZ-Bereitstellungswerkzeuge"},
+          "packages": ["com.lenovo.dsa", "com.lenovo.ocpl"],
+          "recommended": true,
+          "tested": true,
+          "what": {
+            "en": "Lenovo tools that download and apply customizations and apps, probably meant for setting up many devices at once (companies, schools, shops).",
+            "de": "Lenovo-Werkzeuge, die Anpassungen und Apps herunterladen und einspielen, vermutlich für die Einrichtung vieler Geräte auf einmal (Firmen, Schulen, Läden)."
+          },
+          "effect": {
+            "en": "None on a private tablet.",
+            "de": "Auf einem privaten Tablet keine."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lenovo-features",
+      "name": {
+        "en": "Lenovo apps and features",
+        "de": "Lenovo-Apps und -Funktionen"
+      },
+      "note": {
+        "en": "Real features. Remove them only if you don't use them.",
+        "de": "Echte Funktionen. Nur entfernen, wenn du sie nicht nutzt."
+      },
+      "items": [
+        {
+          "id": "lenovo-vantage",
+          "name": {"en": "Lenovo Vantage", "de": "Lenovo Vantage"},
+          "packages": ["com.tblenovo.center", "com.tblenovo.ue.config"],
+          "recommended": false,
+          "tested": false,
+          "what": {
+            "en": "Lenovo's help app: user guide, hardware tests, feedback and shop. Runs in the background.",
+            "de": "Lenovos Hilfe-App: Anleitung, Hardwaretests, Feedback und Shop. Läuft im Hintergrund."
+          },
+          "effect": {
+            "en": "The app and its notes disappear. System updates come from the separate \"System update\" app, which stays.",
+            "de": "Die App und ihre Hinweise verschwinden. Systemupdates kommen von der eigenen App „Systemupdate“, die bleibt."
+          }
+        },
+        {
+          "id": "smart-connect",
+          "name": {"en": "Smart Connect", "de": "Smart Connect"},
+          "packages": ["com.motorola.mobiledesktop", "com.motorola.mobiledesktop.core", "com.motorola.readyforsignature.app"],
+          "recommended": false,
+          "tested": false,
+          "what": {
+            "en": "Lenovo's cross-device feature (based on Motorola \"Ready For\"): connects the tablet with a PC or phone, for example as a second screen or to share files. Runs in the background.",
+            "de": "Lenovos Geräteverbund (basiert auf Motorolas „Ready For“): verbindet das Tablet mit PC oder Handy, zum Beispiel als zweiter Bildschirm oder zum Teilen von Dateien. Läuft im Hintergrund."
+          },
+          "effect": {
+            "en": "Smart Connect is gone.",
+            "de": "Smart Connect fällt weg."
+          }
+        },
+        {
+          "id": "lthd",
+          "name": {"en": "LTHD (diagnostics for Lenovo's PC tool)", "de": "LTHD (Diagnose für Lenovos PC-Programm)"},
+          "packages": ["com.lmsa.app.lmsapad"],
+          "recommended": false,
+          "tested": false,
+          "what": {
+            "en": "Diagnostics helper for Lenovo's PC support tool (Rescue and Smart Assistant).",
+            "de": "Diagnose-Helfer für Lenovos PC-Supportprogramm (Rescue and Smart Assistant)."
+          },
+          "effect": {
+            "en": "Only matters if you use that PC program.",
+            "de": "Nur wichtig, wenn du dieses PC-Programm benutzt."
+          }
+        },
+        {
+          "id": "lenovo-notepad",
+          "name": {"en": "Notepad", "de": "Notepad (Notizen)"},
+          "packages": ["com.zui.notes"],
+          "recommended": false,
+          "tested": false,
+          "what": {
+            "en": "Lenovo's notes app.",
+            "de": "Lenovos Notiz-App."
+          },
+          "effect": {
+            "en": "The app disappears. Remove it only if you have no notes in it.",
+            "de": "Die App verschwindet. Nur entfernen, wenn du darin keine Notizen hast."
+          }
+        },
+        {
+          "id": "lenovo-weather",
+          "name": {"en": "Weather", "de": "Wetter"},
+          "packages": ["com.zui.weather"],
+          "recommended": false,
+          "tested": false,
+          "what": {
+            "en": "Lenovo's weather app with the clock and weather widget.",
+            "de": "Lenovos Wetter-App mit dem Uhr- und Wetter-Widget."
+          },
+          "effect": {
+            "en": "The app and its home screen widget disappear.",
+            "de": "Die App und ihr Widget auf dem Startbildschirm verschwinden."
+          }
+        }
+      ]
+    },
+    {
+      "id": "google-media",
+      "name": {
+        "en": "Google: video, music and kids",
+        "de": "Google: Video, Musik und Kinder"
+      },
+      "note": {
+        "en": "Remove what you don't use. Purchases and subscriptions stay in your Google account.",
+        "de": "Entferne, was du nicht nutzt. Käufe und Abos bleiben in deinem Google-Konto."
+      },
+      "items": [
+        {
+          "id": "youtube",
+          "name": {"en": "YouTube", "de": "YouTube"},
+          "packages": ["com.google.android.youtube"],
+          "recommended": false,
+          "tested": true,
+          "what": {
+            "en": "Google's video app.",
+            "de": "Googles Video-App."
+          },
+          "effect": {
+            "en": "The app disappears; YouTube still works in the browser. It can run in the background even if you never open it.",
+            "de": "Die App verschwindet; YouTube geht weiter im Browser. Sie kann im Hintergrund laufen, auch wenn du sie nie öffnest."
+          }
+        },
+        {
+          "id": "youtube-music",
+          "name": {"en": "YouTube Music", "de": "YouTube Music"},
+          "packages": ["com.google.android.apps.youtube.music", "com.google.android.apps.youtube.music.setupwizard"],
+          "recommended": false,
+          "tested": true,
+          "what": {
+            "en": "Google's music app.",
+            "de": "Googles Musik-App."
+          },
+          "effect": {
+            "en": "The app disappears; music.youtube.com still works in the browser.",
+            "de": "Die App verschwindet; music.youtube.com geht weiter im Browser."
+          }
+        },
+        {
+          "id": "google-tv",
+          "name": {"en": "Google TV", "de": "Google TV"},
+          "packages": ["com.google.android.videos"],
+          "recommended": false,
+          "tested": true,
+          "what": {
+            "en": "Google's app for renting and buying films and series.",
+            "de": "Googles App zum Leihen und Kaufen von Filmen und Serien."
+          },
+          "effect": {
+            "en": "The app disappears. It can run in the background even if you never open it.",
+            "de": "Die App verschwindet. Sie kann im Hintergrund laufen, auch wenn du sie nie öffnest."
+          }
+        },
+        {
+          "id": "entertainment-space",
+          "name": {"en": "Entertainment Space", "de": "Entertainment Space"},
+          "packages": ["com.google.android.apps.mediahome.launcher"],
+          "recommended": false,
+          "tested": true,
+          "what": {
+            "en": "Google's page with recommendations for videos, games and books.",
+            "de": "Googles Seite mit Empfehlungen für Videos, Spiele und Bücher."
+          },
+          "effect": {
+            "en": "The recommendations page disappears. It can run in the background even if you never open it.",
+            "de": "Die Empfehlungsseite verschwindet. Sie kann im Hintergrund laufen, auch wenn du sie nie öffnest."
+          }
+        },
+        {
+          "id": "kids-space",
+          "name": {"en": "Kids Space", "de": "Kids Space"},
+          "packages": ["com.google.android.apps.kids.home"],
+          "recommended": false,
+          "tested": true,
+          "what": {
+            "en": "Google's child-friendly mode with selected apps, books and videos.",
+            "de": "Googles kindgerechter Modus mit ausgewählten Apps, Büchern und Videos."
+          },
+          "effect": {
+            "en": "The kids mode is no longer available.",
+            "de": "Den Kindermodus gibt es dann nicht mehr."
+          }
+        }
+      ]
+    },
+    {
+      "id": "google-communication",
+      "name": {
+        "en": "Google: mail, messages and calls",
+        "de": "Google: Mail, Nachrichten und Anrufe"
+      },
+      "note": {
+        "en": "Remove what you don't use.",
+        "de": "Entferne, was du nicht nutzt."
+      },
+      "items": [
+        {
+          "id": "gmail",
+          "name": {"en": "Gmail", "de": "Gmail"},
+          "packages": ["com.google.android.gm"],
+          "recommended": false,
+          "tested": true,
+          "what": {
+            "en": "Google's mail app.",
+            "de": "Googles Mail-App."
+          },
+          "effect": {
+            "en": "The app disappears; your mail stays in your account (mail.google.com). Email links open in another mail app, if you have one.",
+            "de": "Die App verschwindet; deine Mails bleiben im Konto (mail.google.com). Mail-Links öffnen sich in einer anderen Mail-App, falls du eine hast."
+          }
+        },
+        {
+          "id": "google-messages",
+          "name": {"en": "Google Messages", "de": "Google Messages"},
+          "packages": ["com.google.android.apps.messaging"],
+          "recommended": false,
+          "tested": true,
+          "what": {
+            "en": "Google's SMS and RCS app.",
+            "de": "Googles SMS- und RCS-App."
+          },
+          "effect": {
+            "en": "On the Wi-Fi model (TB330FU) it is only useful if you pair it with your phone to read your phone's messages. On the LTE model (TB330XU) it is the SMS app: keep it there if you use SMS.",
+            "de": "Auf dem WLAN-Modell (TB330FU) nützt sie nur, wenn du sie mit deinem Handy koppelst, um dessen Nachrichten zu lesen. Auf dem LTE-Modell (TB330XU) ist sie die SMS-App: dort behalten, wenn du SMS nutzt."
+          }
+        },
+        {
+          "id": "google-meet",
+          "name": {"en": "Google Meet", "de": "Google Meet"},
+          "packages": ["com.google.android.apps.tachyon"],
+          "recommended": false,
+          "tested": true,
+          "what": {
+            "en": "Google's video calls.",
+            "de": "Googles Videoanrufe."
+          },
+          "effect": {
+            "en": "No Meet app; meet.google.com still works in the browser.",
+            "de": "Keine Meet-App; meet.google.com geht weiter im Browser."
+          }
+        }
+      ]
+    },
+    {
+      "id": "google-other",
+      "name": {
+        "en": "Google: other apps and services",
+        "de": "Google: weitere Apps und Dienste"
+      },
+      "note": {
+        "en": "Some of these are everyday apps. Read what changes before you remove them.",
+        "de": "Einige davon sind Alltags-Apps. Lies vor dem Entfernen, was sich ändert."
+      },
+      "items": [
+        {
+          "id": "google-app",
+          "name": {"en": "Google app and Assistant", "de": "Google-App und Assistant"},
+          "packages": ["com.google.android.googlequicksearchbox", "com.google.android.apps.googleassistant", "com.android.hotwordenrollment.okgoogle", "com.android.hotwordenrollment.xgoogle"],
+          "recommended": false,
+          "tested": true,
+          "what": {
+            "en": "Google search with the search widget, Google Assistant (\"Hey Google\") and the Discover feed.",
+            "de": "Google-Suche mit Such-Widget, Google Assistant („Hey Google“) und Discover-Feed."
+          },
+          "effect": {
+            "en": "The search widget disappears from the home screen, and there is no digital assistant anymore. Voice typing in Gboard may stop working (not tested yet).",
+            "de": "Das Such-Widget verschwindet vom Startbildschirm, und es gibt keinen digitalen Assistenten mehr. Die Spracheingabe in Gboard kann danach fehlen (noch nicht getestet)."
+          }
+        },
+        {
+          "id": "chrome",
+          "name": {"en": "Chrome", "de": "Chrome"},
+          "packages": ["com.android.chrome"],
+          "recommended": false,
+          "tested": false,
+          "guard": "webview-not-chrome",
+          "what": {
+            "en": "Google's web browser.",
+            "de": "Googles Webbrowser."
+          },
+          "effect": {
+            "en": "Install another browser first! Web pages inside other apps keep working, because they use \"Android System WebView\", which stays. The tool checks this before it removes Chrome.",
+            "de": "Vorher einen anderen Browser installieren! Webseiten in anderen Apps gehen weiter, weil sie „Android System WebView“ nutzen, das bleibt. Das Werkzeug prüft das, bevor es Chrome entfernt."
+          }
+        },
+        {
+          "id": "google-maps",
+          "name": {"en": "Google Maps", "de": "Google Maps"},
+          "packages": ["com.google.android.apps.maps"],
+          "recommended": false,
+          "tested": true,
+          "what": {
+            "en": "Maps and navigation.",
+            "de": "Karten und Navigation."
+          },
+          "effect": {
+            "en": "No maps app; map links open in the browser.",
+            "de": "Keine Karten-App; Karten-Links öffnen sich im Browser."
+          }
+        },
+        {
+          "id": "google-photos",
+          "name": {"en": "Google Photos", "de": "Google Fotos"},
+          "packages": ["com.google.android.apps.photos"],
+          "recommended": false,
+          "tested": true,
+          "what": {
+            "en": "Gallery and Google's photo cloud.",
+            "de": "Galerie und Googles Foto-Cloud."
+          },
+          "effect": {
+            "en": "Backup to Google Photos stops; your pictures stay on the tablet. It may be the only gallery app: then you view pictures in a file manager or install another gallery.",
+            "de": "Die Sicherung zu Google Fotos endet; deine Bilder bleiben auf dem Tablet. Womöglich ist sie die einzige Galerie-App: Dann siehst du Bilder über einen Dateimanager an oder installierst eine andere Galerie."
+          }
+        },
+        {
+          "id": "digital-wellbeing",
+          "name": {"en": "Digital Wellbeing", "de": "Digital Wellbeing"},
+          "packages": ["com.google.android.apps.wellbeing"],
+          "recommended": false,
+          "tested": true,
+          "what": {
+            "en": "Screen time statistics, app timers, bedtime mode and focus mode. Runs in the background.",
+            "de": "Bildschirmzeit-Statistik, App-Timer, Schlafenszeit- und Konzentrationsmodus. Läuft im Hintergrund."
+          },
+          "effect": {
+            "en": "These features are gone.",
+            "de": "Diese Funktionen fallen weg."
+          }
+        },
+        {
+          "id": "arcore",
+          "name": {"en": "Google Play Services for AR (ARCore)", "de": "Google Play-Dienste für AR (ARCore)"},
+          "packages": ["com.google.ar.core"],
+          "recommended": false,
+          "tested": true,
+          "what": {
+            "en": "Augmented reality for apps.",
+            "de": "Erweiterte Realität (AR) für Apps."
+          },
+          "effect": {
+            "en": "Apps can no longer use AR. You can install it again from the Play Store at any time.",
+            "de": "Apps können kein AR mehr nutzen. Du kannst es jederzeit wieder aus dem Play Store installieren."
+          }
+        },
+        {
+          "id": "cross-device",
+          "name": {"en": "Cross-Device Services", "de": "Cross-Device Services (geräteübergreifende Dienste)"},
+          "packages": ["com.google.ambient.streaming"],
+          "recommended": false,
+          "tested": true,
+          "what": {
+            "en": "Google's features for using apps across devices, for example streaming apps to a Chromebook.",
+            "de": "Googles Funktionen für Apps über Gerätegrenzen hinweg, zum Beispiel Apps auf ein Chromebook streamen."
+          },
+          "effect": {
+            "en": "These cross-device features stop working.",
+            "de": "Diese geräteübergreifenden Funktionen gehen nicht mehr."
+          }
+        },
+        {
+          "id": "wifi-provisioner",
+          "name": {"en": "Google Wi-Fi Provisioner", "de": "Google Wi-Fi Provisioner"},
+          "packages": ["com.google.android.apps.carrier.carrierwifi"],
+          "recommended": false,
+          "tested": true,
+          "what": {
+            "en": "Carrier Wi-Fi, automatic sign-in to public OpenRoaming hotspots with your Google account, and a Wi-Fi quality rating. Runs in the background.",
+            "de": "Netzbetreiber-WLAN, automatische Anmeldung an öffentlichen OpenRoaming-Hotspots mit dem Google-Konto und eine WLAN-Bewertung. Läuft im Hintergrund."
+          },
+          "effect": {
+            "en": "Normal Wi-Fi keeps working (tested). Automatic sign-in to OpenRoaming hotspots is gone.",
+            "de": "Normales WLAN geht weiter (getestet). Die automatische Anmeldung an OpenRoaming-Hotspots fällt weg."
+          }
+        },
+        {
+          "id": "google-drive",
+          "name": {"en": "Google Drive", "de": "Google Drive"},
+          "packages": ["com.google.android.apps.docs"],
+          "recommended": false,
+          "tested": false,
+          "what": {
+            "en": "Google's cloud storage.",
+            "de": "Googles Cloud-Speicher."
+          },
+          "effect": {
+            "en": "No Drive app; your files stay in your account (drive.google.com).",
+            "de": "Keine Drive-App; deine Dateien bleiben im Konto (drive.google.com)."
+          }
+        },
+        {
+          "id": "google-calendar",
+          "name": {"en": "Google Calendar", "de": "Google Kalender"},
+          "packages": ["com.google.android.calendar"],
+          "recommended": false,
+          "tested": false,
+          "what": {
+            "en": "Calendar app.",
+            "de": "Kalender-App."
+          },
+          "effect": {
+            "en": "No calendar app; your appointments stay in your account.",
+            "de": "Keine Kalender-App; deine Termine bleiben im Konto."
+          }
+        },
+        {
+          "id": "google-contacts",
+          "name": {"en": "Google Contacts", "de": "Google Kontakte"},
+          "packages": ["com.google.android.contacts"],
+          "recommended": false,
+          "tested": false,
+          "what": {
+            "en": "Contacts app.",
+            "de": "Kontakte-App."
+          },
+          "effect": {
+            "en": "No contacts app; the contacts themselves stay stored. Apps in which you pick a contact may no longer be able to do that.",
+            "de": "Keine Kontakte-App; die Kontakte selbst bleiben gespeichert. Apps, in denen du einen Kontakt auswählst, können das womöglich nicht mehr."
+          }
+        },
+        {
+          "id": "google-clock",
+          "name": {"en": "Clock", "de": "Uhr"},
+          "packages": ["com.google.android.deskclock"],
+          "recommended": false,
+          "tested": false,
+          "what": {
+            "en": "Alarm clock, timer, stopwatch and world clock.",
+            "de": "Wecker, Timer, Stoppuhr und Weltuhr."
+          },
+          "effect": {
+            "en": "No alarm clock and no timer anymore!",
+            "de": "Kein Wecker und kein Timer mehr!"
+          }
+        },
+        {
+          "id": "google-calculator",
+          "name": {"en": "Calculator", "de": "Rechner"},
+          "packages": ["com.google.android.calculator"],
+          "recommended": false,
+          "tested": false,
+          "what": {
+            "en": "Calculator app.",
+            "de": "Taschenrechner."
+          },
+          "effect": {
+            "en": "No calculator app.",
+            "de": "Kein Taschenrechner mehr."
+          }
+        },
+        {
+          "id": "files-by-google",
+          "name": {"en": "Files by Google", "de": "Files by Google"},
+          "packages": ["com.google.android.apps.nbu.files"],
+          "recommended": false,
+          "tested": false,
+          "what": {
+            "en": "File manager and storage cleaner.",
+            "de": "Dateimanager und Speicher-Aufräumer."
+          },
+          "effect": {
+            "en": "The file manager disappears. Apps can still open and save files through the system's file picker, which stays.",
+            "de": "Der Dateimanager verschwindet. Apps können weiter über die Dateiauswahl des Systems Dateien öffnen und speichern, die bleibt."
+          }
+        },
+        {
+          "id": "key-verifier",
+          "name": {"en": "Android System Key Verifier", "de": "Android System Key Verifier"},
+          "packages": ["com.google.android.contactkeys"],
+          "recommended": false,
+          "tested": false,
+          "what": {
+            "en": "Lets you verify the encryption keys of your contacts in messaging apps.",
+            "de": "Prüft die Verschlüsselungsschlüssel deiner Kontakte in Messenger-Apps."
+          },
+          "effect": {
+            "en": "Key verification is gone. Google Play may install it again.",
+            "de": "Die Schlüsselprüfung fällt weg. Google Play installiert sie womöglich wieder."
+          }
+        }
+      ]
+    }
+  ]
+}
