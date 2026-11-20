@@ -201,14 +201,14 @@
           "name": {"en": "Lenovo Vantage", "de": "Lenovo Vantage"},
           "packages": ["com.tblenovo.center", "com.tblenovo.ue.config"],
           "recommended": false,
-          "tested": false,
+          "tested": true,
           "what": {
             "en": "Lenovo's help app: user guide, hardware tests, feedback and shop. Runs in the background.",
             "de": "Lenovos Hilfe-App: Anleitung, Hardwaretests, Feedback und Shop. Läuft im Hintergrund."
           },
           "effect": {
-            "en": "The app and its notes disappear. System updates come from the separate \"System update\" app, which stays.",
-            "de": "Die App und ihre Hinweise verschwinden. Systemupdates kommen von der eigenen App „Systemupdate“, die bleibt."
+            "en": "The app and its notes disappear. In Settings under \"About tablet\", the feedback entry is gone, because it belongs to Vantage. System updates come from the separate \"System update\" app, which stays.",
+            "de": "Die App und ihre Hinweise verschwinden. In den Einstellungen unter „Über das Tablet“ fällt der Feedback-Eintrag weg, er gehört zu Vantage. Systemupdates kommen von der eigenen App „Systemupdate“, die bleibt."
           }
         },
         {
@@ -216,7 +216,7 @@
           "name": {"en": "Smart Connect", "de": "Smart Connect"},
           "packages": ["com.motorola.mobiledesktop", "com.motorola.mobiledesktop.core", "com.motorola.readyforsignature.app"],
           "recommended": false,
-          "tested": false,
+          "tested": true,
           "what": {
             "en": "Lenovo's cross-device feature (based on Motorola \"Ready For\"): connects the tablet with a PC or phone, for example as a second screen or to share files. Runs in the background.",
             "de": "Lenovos Geräteverbund (basiert auf Motorolas „Ready For“): verbindet das Tablet mit PC oder Handy, zum Beispiel als zweiter Bildschirm oder zum Teilen von Dateien. Läuft im Hintergrund."

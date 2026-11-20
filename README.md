@@ -163,8 +163,8 @@ Real features. Remove them only if you don't use them.
 
 | App | What it is | If removed | Preselected | Tested |
 |---|---|---|:-:|:-:|
-| **Lenovo Vantage**<br>`com.tblenovo.center`<br>`com.tblenovo.ue.config`<br>id: `lenovo-vantage` | Lenovo's help app: user guide, hardware tests, feedback and shop. Runs in the background. | The app and its notes disappear. System updates come from the separate "System update" app, which stays. | – | – |
-| **Smart Connect**<br>`com.motorola.mobiledesktop`<br>`com.motorola.mobiledesktop.core`<br>`com.motorola.readyforsignature.app`<br>id: `smart-connect` | Lenovo's cross-device feature (based on Motorola "Ready For"): connects the tablet with a PC or phone, for example as a second screen or to share files. Runs in the background. | Smart Connect is gone. | – | – |
+| **Lenovo Vantage**<br>`com.tblenovo.center`<br>`com.tblenovo.ue.config`<br>id: `lenovo-vantage` | Lenovo's help app: user guide, hardware tests, feedback and shop. Runs in the background. | The app and its notes disappear. In Settings under "About tablet", the feedback entry is gone, because it belongs to Vantage. System updates come from the separate "System update" app, which stays. | – | yes |
+| **Smart Connect**<br>`com.motorola.mobiledesktop`<br>`com.motorola.mobiledesktop.core`<br>`com.motorola.readyforsignature.app`<br>id: `smart-connect` | Lenovo's cross-device feature (based on Motorola "Ready For"): connects the tablet with a PC or phone, for example as a second screen or to share files. Runs in the background. | Smart Connect is gone. | – | yes |
 | **LTHD (diagnostics for Lenovo's PC tool)**<br>`com.lmsa.app.lmsapad`<br>id: `lthd` | Diagnostics helper for Lenovo's PC support tool (Rescue and Smart Assistant). | Only matters if you use that PC program. | – | – |
 | **Notepad**<br>`com.zui.notes`<br>id: `lenovo-notepad` | Lenovo's notes app. | The app disappears. Remove it only if you have no notes in it. | – | – |
 | **Weather**<br>`com.zui.weather`<br>id: `lenovo-weather` | Lenovo's weather app with the clock and weather widget. | The app and its home screen widget disappear. | – | – |
